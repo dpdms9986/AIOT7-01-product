@@ -6,7 +6,7 @@ import java.util.List;
 
 import DTO.Product;
 
-/**
+/** 
  *   데이터 접근 객체
  *   - 상품 데이터를 접근
  */
@@ -40,7 +40,7 @@ public class ProductDAO extends JDBConnection {
 				// rs.getXXX("컬럼명")  : 해당 컬럼의 데이터를 반환
 				product.setNo( rs.getInt("no") );
 				product.setName( rs.getString("name") );
-				product.setName( rs.getString("exdate") );
+				product.setExdate( rs.getString("exdate") );
 				product.setCreatedAt( rs.getTimestamp("created_at") );
 				product.setUpdatedAt( rs.getTimestamp("updated_at") );
 				
