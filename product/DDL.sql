@@ -15,7 +15,7 @@ DROP sequence Product_SEQ;
 CREATE TABLE product (
     no          NUMBER  PRIMARY KEY,
     name       VARCHAR2(200) NOT NULL,
-    exdate     DATE DEFAULT sysdate,
+    exdate     VARCHAR2(100),
     created_at  DATE    DEFAULT sysdate,
     updated_at  DATE    DEFAULT sysdate
 );
