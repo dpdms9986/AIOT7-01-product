@@ -21,16 +21,16 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public int insert(Product board) {
-		int result = productDAO.insert(board);
+    public int insert(Product product) {
+		int result = productDAO.insert(product);
 		if( result > 0 ) System.out.println("물품정보가 등록되었습니다.");
 		else System.err.println("물품정보 등록에 실패했습니다.");
 		return result;
     }
 
     @Override
-    public int update(Product board) {
-		int result = productDAO.update(board);
+    public int update(Product product) {
+		int result = productDAO.update(product);
 		if( result > 0 ) System.out.println("물품정보가 수정되었습니다.");
 		else System.err.println("물품정보 수정에 실패했습니다.");
 		return result;
