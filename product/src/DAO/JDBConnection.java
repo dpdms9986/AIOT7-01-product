@@ -15,18 +15,21 @@ public class JDBConnection {
 	// 기본 생성자
 	public JDBConnection() {
 		// JDBC 드라이버 로드
-		// MySQL
+		// Oracle
 		try {
-			// mysql-connector-j.xxx.jar 드라이버의 클래스를 로드한다.
-			Class.forName("com.mysql.cj.jdbc.Driver");		 
+			// ojdbc8.jar 드라이버의 클래스를 로드한다.
+			Class.forName("oracle.jdbc.OracleDriver");		 
 			
 			// DB에 연결
 			// - 연결에 필요한 정보 : URL, id, pw
 			// URL : jdbc:mysql://도메인:[PORT]/[스키마]?옵션파라미터
 			//		* 내 PC의 IP주소 : localhost : 127.0.0.1
-			//		* 3306 : MySQL 데이터베이스의 기본 포트
-			String url = "jdbc:mysql://127.0.0.1:3306/aloha?serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&useSSL=false";
-			String id = "aloha";
+			//		* 1521 : Oracle 데이터베이스의 기본 포트
+			//    * SID
+			//    * 11g  : xe
+			//    * 12c~ : orcl
+			String url = "jdbc:oracle:thin:@localhost:1521:orcl2";
+			String id = "system";
 			String pw = "123456";
 			
 			// 자바 프로그램에서 JDBC 드라이버를 연결시켜주는 클래스
