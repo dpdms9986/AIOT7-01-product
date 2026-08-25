@@ -39,9 +39,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
 	public int delete(int no) {
 		int result = productDAO.delete(no);
-		// 적용된 데이터 개수를 반환
-		// - result(결과)	: 0 --> 데이터 삭제 실패
-		//				  1 --> 삭제 수정 성공
 		if( result > 0 ) System.out.println("물품정보가 삭제되었습니다.");
 		else System.err.println("물품정보 삭제를 실패하였습니다.");
 		return result;
