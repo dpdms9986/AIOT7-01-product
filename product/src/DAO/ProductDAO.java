@@ -111,7 +111,7 @@ public class ProductDAO extends JDBConnection {
 		int result = 0;			// 결과 : 적용된 데이터 개수
 		
 		String sql = " INSERT INTO product ( no, name, exdate ) "
-				   + " VALUES( product_SEQ.nextval, ?, ? ) ";
+				   + " VALUES( product_SEQ.nextval, ? , ?) ";
 		
 		try {
 			psmt = con.prepareStatement(sql);			    // 쿼리 실행 객체 생성
