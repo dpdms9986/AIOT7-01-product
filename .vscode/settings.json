@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "product/lib/lombok.jar",
+        "c:\\SYE\\CODE\\JAVA\\board\\lib\\mysql-connector-j-26.7.0.jar",
+        "product/lib/ojdbc11.jar"
+    ]
+}
