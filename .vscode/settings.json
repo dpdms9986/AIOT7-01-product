@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\DW-203\\OneDrive\\Desktop\\Jaeah\\Java\\board-oracle\\lib\\lombok.jar",
+        "c:\\Users\\DW-203\\OneDrive\\Desktop\\Jaeah\\Java\\board-oracle\\lib\\ojdbc11.jar"
+    ]
+}
