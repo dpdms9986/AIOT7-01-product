@@ -42,9 +42,5 @@ public class JDBConnection {
 			e.printStackTrace();
 		}
 		
-	}
-    public static void main(String[] args) {
-        JDBConnection jdbc = new JDBConnection();
-    }
-	
+	}	
 }
