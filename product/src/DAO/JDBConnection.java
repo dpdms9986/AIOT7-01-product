@@ -29,7 +29,7 @@ public class JDBConnection {
 			//    * 11g  : xe
 			//    * 12c~ : orcl
 			String url = "jdbc:oracle:thin:@192.168.0.118:1521:orcl2";
-			String id = "system";
+			String id = "product";
 			String pw = "123456";
 			
 			// 자바 프로그램에서 JDBC 드라이버를 연결시켜주는 클래스
