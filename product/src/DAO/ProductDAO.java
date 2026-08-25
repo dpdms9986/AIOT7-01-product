@@ -40,7 +40,7 @@ public class ProductDAO extends JDBConnection {
 				// rs.getXXX("컬럼명")  : 해당 컬럼의 데이터를 반환
 				product.setNo( rs.getInt("no") );
 				product.setName( rs.getString("name") );
-				product.setName( rs.getString("exdate") );
+				product.setExdate( rs.getString("exdate") );
 				product.setCreatedAt( rs.getTimestamp("created_at") );
 				product.setUpdatedAt( rs.getTimestamp("updated_at") );
 				
@@ -147,7 +147,7 @@ public class ProductDAO extends JDBConnection {
 			psmt = con.prepareStatement(sql);			// 쿼리 실행 객체 생성
 			psmt.setString( 1, product.getName() );		// 1번 ? 에 Name(상품명) 매핑
 			psmt.setString( 2, product.getExdate() );   // 2번 ? 에 Exdate(유통기한)매핑
-			psmt.setInt( 4, product.getNo() );			// 3번 ? 에 no(글번호) 매핑
+			psmt.setInt( 3, product.getNo() );			// 3번 ? 에 no(글번호) 매핑
 			result = psmt.executeUpdate();				// SQL 실행 요청
 			// * executeUpdate() 
 			// SQL(INSERT, UPDATE, DELETE) 실행 시 적용된 데이터 개수를 int 타입으로 받아온다.
