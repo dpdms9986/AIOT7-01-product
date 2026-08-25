@@ -4,8 +4,8 @@ import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-// 게시글 정보 객체 정의하기
-// 글번호, 제목, 작성자, 내용, 등록일자, 수정일자
+// 상품 정보 객체 정의하기
+// 상품번호, 상품명, 유통기한, 등록날짜, 수정일
 
 @Data
 @AllArgsConstructor
