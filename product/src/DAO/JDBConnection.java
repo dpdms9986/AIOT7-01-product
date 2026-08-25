@@ -28,6 +28,8 @@ public class JDBConnection {
 			//    * SID
 			//    * 11g  : xe
 			//    * 12c~ : orcl
+			String url = "jdbc:oracle:thin:@localhost:1521:orcl2";
+			String id = "aloha";
 			String url = "jdbc:oracle:thin:@192.168.0.118:1521:orcl2";
 			String id = "system";
 			String pw = "123456";

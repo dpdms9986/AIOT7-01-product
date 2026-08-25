@@ -169,7 +169,7 @@ public class Main {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		int menuNo = 0;
 		
 		do {
